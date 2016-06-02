@@ -262,7 +262,7 @@ void bootstrap()
 	// Register callback functions for receive / send
     iM880A_RegisterRadioCallbacks(CbMsgIndication, CbLoRaWANHCIResponse, CbDevMgmtHCIResponse);
 
-	// whatever the timer and scheduler did before, they pull in an entire shitload of deps
+	// whatever the timer and scheduler did before, they pull in a lot of deps
     iM880A_setup();
     //timer_post_task_delay(&iM880A_setup, TIMER_TICKS_PER_SEC * 1);
 
@@ -271,8 +271,7 @@ void bootstrap()
 
 int main(int argc, char** argv) {
 	bootstrap();
-	send_message();
-	return 0;
+	return iM880A_SendUDataTelegram((uint8_t*) "Test", 4);
 }
 
 

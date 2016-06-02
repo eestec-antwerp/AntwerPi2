@@ -33,7 +33,7 @@
 
 #include <stdlib.h>
 
-// some bullshit small typedefs
+// some small typedefs
 #include "types.h"
 #include "link_c.h"
 
