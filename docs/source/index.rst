@@ -33,7 +33,6 @@ Contents:
 
    quadcopter/index
 
-
 .. _eestec:
 
 .. toctree::
@@ -41,6 +40,7 @@ Contents:
    :caption: EESTEC Project Documentation
 
    eestec/index
+   eestec/lora
 
 
 Contact
