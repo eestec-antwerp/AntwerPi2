@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoRa posts</title>
+    <style>
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        {% for l in logs %}
+        <h2>{{l.name}}</h2>
+        <pre>{{l.content}}</pre>
+        {% end %}
+    </div>
+</body>
+
+</html>
