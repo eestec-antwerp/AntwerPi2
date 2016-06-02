@@ -1,11 +1,6 @@
 
 =======
- Index
+ About
 =======
 
-Contents:
-
-.. toctree::
-   :maxdepth: 2
-   
-   parts
+It's a quad!

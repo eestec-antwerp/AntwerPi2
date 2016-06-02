@@ -21,7 +21,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-   
+   index
    intro
 
 
@@ -30,17 +30,18 @@ Contents:
 .. toctree::
    :maxdepth: 2
    :caption: Quadcopter Documentation
+   :glob:
 
-   quadcopter/index
+   quadcopter/*
 
 .. _eestec:
 
 .. toctree::
    :maxdepth: 2
    :caption: EESTEC Project Documentation
+   :glob:
 
-   eestec/index
-   eestec/lora
+   eestec/*
 
 
 Contact
