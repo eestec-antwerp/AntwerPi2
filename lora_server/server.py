@@ -27,7 +27,6 @@ class PostLog:
         self.content = content
 
 class MainHandler(tornado.web.RequestHandler):
-    
     def get(self):
         filenames = sorted(filter(lambda f: os.path.isfile(pjoin(posts_dir, f)), os.listdir(posts_dir)), reverse=True)
         logs = []
