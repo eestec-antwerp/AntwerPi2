@@ -10,7 +10,7 @@ Quick links
 -----------
 
     * Github: https://github.com/eestec-antwerp/AntwerPi2
-    * Event website: http://www.eestec.be/antwerpi/
+    * Event website: http://www.eestec.be/antwerpi2/
 
 Index
 -----
