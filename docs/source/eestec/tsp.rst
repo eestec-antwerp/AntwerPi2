@@ -26,7 +26,7 @@ The part of the code you will have to modify is in ``main.py``, from **line 239*
 Level 1
 =======
 
-Consider as a purpose: ?picking up cargo?. We can assume this cargo is weightless, meaning that a drone can carry infinite amounts of cargo. The only thing the drone is picking up every cargo and doing this as efficient as possible.
+Consider as a purpose: "picking up cargo". We can assume this cargo is weightless, meaning that a drone can carry infinite amounts of cargo. The only thing the drone is picking up every cargo and doing this as efficient as possible.
 
 In the simulation you?ll get a drone and you?ll be able to coordinate this drone. The purpose of your coordination is to reduce the distance needed to collect all cargo.
 
