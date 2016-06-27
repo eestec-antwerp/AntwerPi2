@@ -2,7 +2,7 @@
  Drone simulation
 ==================
 
-In this exercise, we will try to optimize the path of the drone, given a set of positions and other constraints. For this you should download `tsp.zip <https://github.com/eestec-antwerp/AntwerPi2/blob/master/tsp/tsp.zip?raw=true>`_ and extract it. The rest of this project will assume that the files are in the current directory.
+In this exercise, we will try to optimize the path of the drone, given a set of positions and other constraints. For this you should download `tsp.zip <https://github.com/eestec-antwerp/AntwerPi2/blob/master/tsp/tsp2.zip?raw=true>`_ and extract it. The rest of this project will assume that the files are in the current directory.
 
 Efficient paths
 ===============
