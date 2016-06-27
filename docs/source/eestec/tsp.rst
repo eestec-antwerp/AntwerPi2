@@ -2,12 +2,26 @@
  Drone simulation
 ==================
 
-In this exercise, we will try to optimize the path of the drone, given a set of positions and other constraints. For this you should download `tsp.zip <tsp.zip>`_ and extract it. The rest of this project will assume that the files are in the current directory.
+In this exercise, we will try to optimize the path of the drone, given a set of positions and other constraints. For this you should download `tsp.zip <https://github.com/eestec-antwerp/AntwerPi2/blob/master/tsp/tsp.zip?raw=true>`_ and extract it. The rest of this project will assume that the files are in the current directory.
 
 Efficient paths
 ===============
 
-Drones fly. Well that?s an obvious statement. But they shouldn?t just fly around randomly, they often has a purpose.
+Drones fly. Well that?s an obvious statement. But they shouldn?t just fly around randomly, they often have a purpose.
+
+The part of the code you will have to modify is in ``main.py``, from **line 239** to **line 258**, meaning this code::
+
+    #######################
+    # GAMELOOP (with a random approach)
+    #######################
+    
+    # PUT YOUR CODE HERE
+    # By default, this has a random algorithm.
+    
+    #######################
+    # SCORE
+    #######################
+    
 
 Level 1
 =======
@@ -16,7 +30,7 @@ Consider as a purpose: ?picking up cargo?. We can assume this cargo is weightles
 
 In the simulation you?ll get a drone and you?ll be able to coordinate this drone. The purpose of your coordination is to reduce the distance needed to collect all cargo.
 
-In the implementation, we already provided some code that already picks up every cargo, but it isn?t efficient at all. 
+In the implementation, we already provided some code that already picks up every cargo, but it isn?t efficient at all (random).
 
 When you run main.py, you can see some cargo appearing and then you see a drone flying around and ?picking up cargo?. Picking up is visualised as an upward arrow appearing on the cargo.
 In the code fragment you can see there are three main parts of the code (that you need to know of). The initialisation part, where you can select the level and the amount of cargo. I?d recommend to change the amount of cargo to 10 while experimenting, and the speed to slow or even slowest. This way it?s easy to see what happens.
