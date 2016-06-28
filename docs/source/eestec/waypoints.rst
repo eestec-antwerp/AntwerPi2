@@ -3,7 +3,7 @@
  Waypoints
 ===========
 
-We can transform a route you programmed into an actual route for the drone, using the file `wayppoints.py <https://raw.githubusercontent.com/eestec-antwerp/AntwerPi2/master/waypoints/waypoints.py>`_. Download it and put it next to your ``main.py``.
+We can transform a route you programmed into an actual route for the drone, using the file <a href="https://raw.githubusercontent.com/eestec-antwerp/AntwerPi2/master/waypoints/waypoints.py" download>waypoints.py</a> Download it and put it next to your ``main.py``.
 
 To use it, you need to import it first, add the following line at the **top** of your file::
     
