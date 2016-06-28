@@ -96,7 +96,7 @@ class WaypointFile(object):
         self.name = name
         if read:
             with open(name, "r") as f:
-                print("#"+f.readline()+"#")
+                #print("#"+f.readline()+"#")
                 #assert f.readline() == "QGC WPL 110\n"
                 self.commands = [QgcCommand.from_line(l.rstrip("\n")) for l in f.readlines() if len(l) > 2]
                 print("Loaded", len(self.commands), "commands")
@@ -107,25 +107,27 @@ class WaypointFile(object):
         #print("\n".join([str(c) for c in self.commands]))
         with open(self.name, "w") as f:
             f.write("QGC WPL 110\n")
-            f.write("\n".join([str(c) for c in self.commands]))
+            f.write("\n".join([c.to_str(i+1) for i, c in enumerate(self.commands)]))
             f.write("\n")
     
     @classmethod
     def import_route(cls, course, name, reference=UAntwerpen):
         wp = []
+        base_x = reference.b - reference.a
+        base_y = reference.c - reference.a
+        print "BASE", base_x, base_y
         for _twp in course.points:
             x, y = float(_twp[0])/100.0, float(_twp[1])/100.0
             assert 0 <= x <= 1
             assert 0 <= y <= 1
+            print x, y
             twp = Point(x, y)
-            
-            base_x = (reference.b - reference.a).x
-            base_y = (reference.c - reference.a).y
             
             offset_x = base_x*x
             offset_y = base_y*y
+            offset = offset_x+offset_y
             
-            wp.append(Waypoint(reference.a.x + offset_x, reference.a.y + offset_y))
+            wp.append(Waypoint(reference.a.x + offset.x, reference.a.y + offset.y))
         f = WaypointFile(name)
         f.commands = wp
         return f
@@ -153,7 +155,6 @@ class QgcCommand(object):
         return cmd_dct[cmd].from_line(parts)
     
     def params(self):
-        print("params called")
         return {
             para.INDEX: 12345,  # filled in later
             para.CURRENT_WP: 0,  # ???
@@ -165,9 +166,9 @@ class QgcCommand(object):
             para.AUTOCONT: 1,  # autocontinue
         }
     
-    def __str__(self):
+    def to_str(self, i):
         params = self.params()
-        print(params)
+        params[para.INDEX] = i
         return "\t".join([str(params[i]) for i in range(12)])
 
 
@@ -216,11 +217,9 @@ class Land(Waypoint):
 cmd_dct = {}
 for cls in [Waypoint, SplineWaypoint, ReturnToLaunch, Takeoff, Land]:
     cmd_dct[cls.cmd] = cls
-print(cmd_dct)
 
 
 if __name__ == "__main__":
     f = WaypointFile("mission_test.txt", read=True)
     f.write()
-
 
