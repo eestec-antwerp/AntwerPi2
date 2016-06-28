@@ -3,6 +3,48 @@
  Waypoints
 ===========
 
+We can transform a route you programmed into an actual route for the drone, using the file `wayppoints.py <https://raw.githubusercontent.com/eestec-antwerp/AntwerPi2/master/waypoints/waypoints.py>`_. Download it and put it next to your ``main.py``.
+
+To use it, you need to import it first, add the following line at the **top** of your file::
+    
+    from waypoints import WaypointFile
+    
+So now it should look like this::
+
+    from waypoints import WaypointFile
+
+    import turtle
+    import random
+    import math
+        
+And then you can generate a waypoints file with these lines (somewhere at the bottom of your file)::
+
+    f = WaypointFile.import_route(droney.route, "waypoints.txt")
+    f.write()
+
+So it should look like this::
+
+    #######################
+    # SCORE
+    #######################
+    
+    print("\n=============================\nSCORE (lower is better)")
+    print(droney.score())
+    
+    f = WaypointFile.import_route(droney.route, "waypoints.txt")
+    f.write()
+
+As you can see, the only important method is ``import_route(route, filename)``.
+    
+Each time you execute it, you will get also generate a ``waypoints.txt`` file. You can use it with `APM Planner <http://planner.ardupilot.com/planner2/docs/installing-apm-planner-2.html>`_.
+
+
+QGC format
+==========
+
+**(not important, skip this unless you're really bored and want to extend the functionality of ``waypoints.py``)**
+
+
 We will be exporting files in the QGC format::
 
     QGC WPL <VERSION>
