@@ -42,7 +42,7 @@ Each time you execute it, you will get also generate a ``waypoints.txt`` file. Y
 QGC format
 ==========
 
-**(not important, skip this unless you're really bored and want to extend the functionality of ``waypoints.py``)**
+**(not important, skip this unless you're really bored and want to extend the functionality of ``waypoints.py`` )**
 
 
 We will be exporting files in the QGC format::
@@ -57,11 +57,11 @@ Where:
   - ``<CURRENT WP>``: leave this at 0
   - ``<COORD FRAME>``: leave this at 3
   - ``<COMMAND>``:
-    - 16: waypoint (also home?)
-    - 82: spline waypoint
-    - 20: Return To Launch (location doesn't matter)
-    - 21: Land
-    - 22: Takeoff
+    + 16: waypoint (also home?)
+    + 82: spline waypoint
+    + 20: Return To Launch (location doesn't matter)
+    + 21: Land
+    + 22: Takeoff
   - ``<PARAM1>``: ??????????????
   - ``<PARAM2>``: acceptance radius
   - ``<PARAM3>``: leave it at 0
