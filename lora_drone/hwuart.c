@@ -20,7 +20,7 @@ struct uart_handle {
 
 uart_handle_t* uart_init(uint8_t channel, uint32_t baudrate, uint8_t pins) {
 	
-	struct uart_handle handle;
+	struct uart_handle handle = malloc(sizeof(struct uart_handle));
 
 	//At bootup, pins 8 and 10 are already set to UART0_TXD, UART0_RXD (ie the alt0 function) respectively
 	int uart0_filestream = -1;
