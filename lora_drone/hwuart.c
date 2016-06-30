@@ -20,7 +20,7 @@ struct uart_handle {
 
 uart_handle_t* uart_init(uint8_t channel, uint32_t baudrate, uint8_t pins) {
 	
-	struct uart_handle handle = malloc(sizeof(struct uart_handle));
+	struct uart_handle *handle = malloc(sizeof(struct uart_handle));
 
 	//At bootup, pins 8 and 10 are already set to UART0_TXD, UART0_RXD (ie the alt0 function) respectively
 	int uart0_filestream = -1;
@@ -43,7 +43,7 @@ uart_handle_t* uart_init(uint8_t channel, uint32_t baudrate, uint8_t pins) {
 		//ERROR - CAN'T OPEN SERIAL PORT
 		printf("Error - Unable to open UART.  Ensure it is not in use by another application\n");
 	}
-	handle.filestream = uart0_filestream;
+	handle->filestream = uart0_filestream;
 
 	//CONFIGURE THE UART
 	//The flags (defined in /usr/include/termios.h - see http://pubs.opengroup.org/onlinepubs/007908799/xsh/termios.h.html):
@@ -76,14 +76,7 @@ bool uart_enable(uart_handle_t* uart) {
 }
 
 void uart_send_byte(uart_handle_t* uart, uint8_t data) {
-	if (uart->filestream != -1)
-			{
-				int count = write(uart->filestream, data, 1);		//Filestream, bytes to write, number of bytes to write
-				if (count < 0)
-				{
-					printf("UART TX error\n");
-				}
-			}
+	uart_send_bytes(uart, &data, 1);
 
 }
 
