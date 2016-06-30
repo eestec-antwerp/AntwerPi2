@@ -1,0 +1,128 @@
+ 
+send_hci: call with sapID=1, msgID=1, payload=(null), len=0
+  ... prepare to comslip
+sending slip_end
+Sending 1 bytes
+sending an actual byte 1
+Sending 1 bytes
+sending an actual byte 1
+Sending 1 bytes
+sending an actual byte 22
+Sending 1 bytes
+sending an actual byte 7
+Sending 1 bytes
+Sending 1 bytes
+  ... OK!
+send_hci: call with sapID=16, msgID=1, payload=(null), len=36
+  ... prepare to comslip
+sending slip_end
+Sending 1 bytes
+sending an actual byte 16
+Sending 1 bytes
+sending an actual byte 1
+Sending 1 bytes
+sending an actual byte 2
+Sending 1 bytes
+sending an actual byte 0
+Sending 1 bytes
+sending an actual byte 67
+Sending 1 bytes
+sending an actual byte 79
+Sending 1 bytes
+sending an actual byte 176
+Sending 1 bytes
+sending an actual byte 108
+Sending 1 bytes
+sending an actual byte 36
+Sending 1 bytes
+sending an actual byte 155
+Sending 1 bytes
+sending an actual byte 238
+Sending 1 bytes
+sending an actual byte 109
+Sending 1 bytes
+sending an actual byte 226
+Sending 1 bytes
+sending an actual byte 90
+Sending 1 bytes
+sending an actual byte 146
+Sending 1 bytes
+sending an actual byte 65
+Sending 1 bytes
+sending an actual byte 213
+Sending 1 bytes
+sending an actual byte 246
+Sending 1 bytes
+sending an actual byte 22
+Sending 1 bytes
+sending an actual byte 81
+Sending 1 bytes
+sending an actual byte 120
+Sending 1 bytes
+sending an actual byte 167
+Sending 1 bytes
+sending an actual byte 148
+Sending 1 bytes
+sending an actual byte 166
+Sending 1 bytes
+sending an actual byte 163
+Sending 1 bytes
+sending an actual byte 98
+Sending 1 bytes
+sending an actual byte 141
+Sending 1 bytes
+sending an actual byte 195
+Sending 1 bytes
+sending an actual byte 84
+Sending 1 bytes
+sending an actual byte 40
+Sending 1 bytes
+sending an actual byte 74
+Sending 1 bytes
+sending an actual byte 115
+Sending 1 bytes
+sending slip_esc, slip_esc_esc
+Sending 1 bytes
+Sending 1 bytes
+sending an actual byte 255
+Sending 1 bytes
+sending an actual byte 128
+Sending 1 bytes
+sending an actual byte 119
+Sending 1 bytes
+sending an actual byte 81
+Sending 1 bytes
+sending an actual byte 118
+Sending 1 bytes
+sending an actual byte 77
+Sending 1 bytes
+sending an actual byte 254
+Sending 1 bytes
+Sending 1 bytes
+  ... OK!
+-------------- after bootstrap ---------------send cdata, length = 4
+send_hci: call with sapID=16, msgID=17, payload=(null), len=5
+  ... prepare to comslip
+sending slip_end
+Sending 1 bytes
+sending an actual byte 16
+Sending 1 bytes
+sending an actual byte 17
+Sending 1 bytes
+sending an actual byte 2
+Sending 1 bytes
+sending an actual byte 84
+Sending 1 bytes
+sending an actual byte 101
+Sending 1 bytes
+sending an actual byte 115
+Sending 1 bytes
+sending an actual byte 116
+Sending 1 bytes
+sending an actual byte 175
+Sending 1 bytes
+sending an actual byte 29
+Sending 1 bytes
+Sending 1 bytes
+  ... OK!
+result of send: 0

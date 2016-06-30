@@ -77,13 +77,13 @@ bool uart_enable(uart_handle_t* uart) {
 
 void uart_send_byte(uart_handle_t* uart, uint8_t data) {
 	uart_send_bytes(uart, &data, 1);
-
 }
 
 void uart_send_bytes(uart_handle_t* uart, void const *data, size_t length) {
 	//----- TX BYTES -----
 		if (uart->filestream != -1)
 		{
+			printf("Sending %i bytes\n", length);
 			int count = write(uart->filestream, data, length);		//Filestream, bytes to write, number of bytes to write
 			if (count < 0)
 			{
@@ -115,13 +115,14 @@ void uart_check_input(uart_handle_t* uart) {
 		int rx_length = read(uart->filestream, (void*)rx_buffer, 255); //Filestream, buffer to store in, number of bytes to read (max)
 		if (rx_length < 0) {
 			//An error occured (will occur if there are no bytes)
-			printf("an error occured while receiving")
+			printf("an error occured while receiving");
 		} else if (rx_length == 0) {
 			// No data waiting
+			sleep(1);
 		} else {
 			//Bytes received
 			rx_buffer[rx_length] = '\0';
-			printf("%i bytes read : %s\n", rx_length, rx_buffer);
+			printf("%i bytes read : '%s'\n", rx_length, rx_buffer);
 			// TODO: call callback
 		}
 	}

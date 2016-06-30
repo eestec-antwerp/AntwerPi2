@@ -139,6 +139,7 @@ iM880A_SendHCIMessage(uint8_t sapID, uint8_t msgID, uint8_t* payload, uint16_t l
     //uart_handle_t
     // 1.1 check length
     //
+    printf("send_hci: call with sapID=%u, msgID=%u, payload=%s, len=%u\n", sapID, msgID, payload, length);
     if(length > WIMODLR_HCI_MSG_PAYLOAD_SIZE)
     {
         return WiMODLR_RESULT_PAYLOAD_LENGTH_ERROR;
@@ -182,13 +183,16 @@ iM880A_SendHCIMessage(uint8_t sapID, uint8_t msgID, uint8_t* payload, uint16_t l
     // 4. forward message to SLIP layer
     //    - start transmission with SAP ID
     //    - correct length by header size
-
+    
+    printf("  ... prepare to comslip\n");
+    
     if (ComSlip_SendMessage(&TxMessage.SapID, length + WIMODLR_HCI_MSG_HEADER_SIZE))
     {
         // ok !
+        printf("  ... OK!\n");
         return WiMODLR_RESULT_OK;
     }
-
+    printf("  ... error :(\n");
     // error - SLIP layer couldn't sent message
     return -1;
 }
@@ -237,12 +241,13 @@ TWiMDLRResultcodes
 iM880A_SendCDataTelegram(uint8_t* payload, uint16_t length)
 {
     TxMessage.Payload[0] = LORA_MAC_PORT;
-
     if(payload && length)
     {
         uint8_t*  dstPtr  = TxMessage.Payload + 1;
         int     n       = (int)length;
-
+        
+        printf("send cdata, length = %i\n", n);
+        
         // copy bytes
         while(n--)
             *dstPtr++ = *payload++;
