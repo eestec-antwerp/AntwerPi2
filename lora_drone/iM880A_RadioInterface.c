@@ -64,7 +64,6 @@
 
  *******************************************************************************/
 
-#include "ComSlip.h"
 #include "CRC16.h"
 #include "RadioDefs.h"
 #include "iM880A_RadioInterface.h"
@@ -137,7 +136,7 @@ int
 iM880A_SendHCIMessage(uint8_t sapID, uint8_t msgID, uint8_t* payload, uint16_t length)
 {
     // 1. check parameter
-    //
+    //uart_handle_t
     // 1.1 check length
     //
     if(length > WIMODLR_HCI_MSG_PAYLOAD_SIZE)

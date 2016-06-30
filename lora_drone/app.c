@@ -271,7 +271,8 @@ void bootstrap()
 
 int main(int argc, char** argv) {
 	bootstrap();
-	return iM880A_SendUDataTelegram((uint8_t*) "Test", 4);
+	iM880A_SendUDataTelegram((uint8_t*) "Test", 4);
+	uart_input(lora);
 }
 
 

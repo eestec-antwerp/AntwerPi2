@@ -68,7 +68,7 @@
 //------------------------------------------------------------------------------
 
 #include "ComSlip.h"
-#include "hwuart.h"
+
 //------------------------------------------------------------------------------
 //
 //  Protocol Definitions
@@ -88,7 +88,7 @@
 #define	SLIPDEC_ESC_STATE			3
 
 
-uart_handle_t* lora;
+
 
 typedef struct
 {

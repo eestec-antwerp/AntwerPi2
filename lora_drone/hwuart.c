@@ -37,7 +37,7 @@ uart_handle_t* uart_init(uint8_t channel, uint32_t baudrate, uint8_t pins) {
 	//											immediately with a failure status if the output can't be written immediately.
 	//
 	//	O_NOCTTY - When set and path identifies a terminal device, open() shall not cause the terminal device to become the controlling terminal for the process.
-	uart0_filestream = open("/dev/ttyAMA0", O_RDWR | O_NOCTTY | O_NDELAY);		//Open in non blocking read/write mode
+	uart0_filestream = open("/dev/ttyAMA0", O_RDWR | O_NOCTTY);		//Open in non blocking read/write mode
 	if (uart0_filestream == -1)
 	{
 		//ERROR - CAN'T OPEN SERIAL PORT
@@ -107,3 +107,23 @@ void uart_rx_interrupt_disable(uart_handle_t* uart) {
 void uart_set_rx_interrupt_callback(uart_handle_t* uart, uart_rx_inthandler_t rx_handler) {
 	
 }
+
+void uart_check_input(uart_handle_t* uart) {
+	while (true) {
+		// Read up to 255 characters from the port if they are there
+		unsigned char rx_buffer[256];
+		int rx_length = read(uart->filestream, (void*)rx_buffer, 255); //Filestream, buffer to store in, number of bytes to read (max)
+		if (rx_length < 0) {
+			//An error occured (will occur if there are no bytes)
+			printf("an error occured while receiving")
+		} else if (rx_length == 0) {
+			// No data waiting
+		} else {
+			//Bytes received
+			rx_buffer[rx_length] = '\0';
+			printf("%i bytes read : %s\n", rx_length, rx_buffer);
+			// TODO: call callback
+		}
+	}
+}
+
