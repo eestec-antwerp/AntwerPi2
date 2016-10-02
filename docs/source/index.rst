@@ -29,15 +29,20 @@ Contents:
 .. toctree::
    :maxdepth: 2
    :caption: Quadcopter Documentation
-   :glob:
-
-   quadcopter/*
+   index
+   schematic
+   parts
+   software
+   setup
+   links
+   glossary
+   
 
 .. _eestec:
 
 .. toctree::
    :maxdepth: 2
-   :caption: EESTEC Project Documentation
+   :caption: EESTEC Event Documentation
    :glob:
 
    eestec/*

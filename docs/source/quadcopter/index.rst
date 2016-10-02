@@ -17,7 +17,7 @@ You may have a great application for drones, but before you can get your hands d
 
   1. Learn a bit about drones in general, and our drone in particular (mainly hardware).
   2. Learn about the different software components that drive the drone.
-  3. Learn how to set up your drone, either for manual or programmatic flight, and take care of safety.
+  3. Learn how to maintain and set up and your drone, either for manual or programmatic flight, and take care of safety.
   4. Learn to fly (in case you need to take over)
 
 The focus of this documentation is on 2 and 3. Apart from this, depending on what you want to do with the drone you may need more knowledge. Examples:
@@ -34,13 +34,15 @@ About Drones
 
 I will not go into too much detail here, as I already make a presentation about it. You can find it on :ref:`links`.
 
+More info on this drone can also be found in the presentation. However, there's also a big schematic that should answer a lot of questions: :ref:`schematic`.
+
 Software
 --------
 
 If you ever want to program your drone, you will need a good understanding of the different components that drive a drone. This is explained in :ref:`software`.
 
-Setup
------
+Setup and :ref:`maintenance`
+----------------------------
 
 Roughly speaking, there are 3 ways to fly:
 

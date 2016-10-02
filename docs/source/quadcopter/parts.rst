@@ -45,5 +45,5 @@ Ground equipment
 ================
 
   - **Charger**: `IMAC B6AC V2 <http://www.hobbyking.com/hobbyking/store/uh_viewItem.asp?idproduct=58285>`_
-  - **`LiPo bag <http://www.hobbyking.com/hobbyking/store/uh_viewitem.asp?idproduct=38356>`_**
-  - **RC transmitter**: `Quanum i8 <http://www.hobbyking.com/hobbyking/store/__86274__Quanum_i8_8ch_2_4GHZ_AFHDS_2A_Digital_Proportional_Radio_System_Mode_2_Black_EU_Warehouse_.html`_ (same as receiver)
+  - `**LiPo bag** <http://www.hobbyking.com/hobbyking/store/uh_viewitem.asp?idproduct=38356>`_
+  - **RC transmitter**: `Quanum i8 <http://www.hobbyking.com/hobbyking/store/__86274__Quanum_i8_8ch_2_4GHZ_AFHDS_2A_Digital_Proportional_Radio_System_Mode_2_Black_EU_Warehouse_.html>`_ (same as receiver)
