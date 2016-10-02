@@ -23,8 +23,6 @@ Contents:
    :maxdepth: 2
    
    Index <self>
-   intro
-
 
 .. _quadcopter:
 

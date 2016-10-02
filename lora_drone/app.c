@@ -16,37 +16,21 @@
  * limitations under the License.
  */
 
-// #include "hwleds.h"
-// #include "hwsystem.h"
-// #include "scheduler.h"
-// #include "timer.h"
-// #include "assert.h"
-// #include "platform.h"
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <stddef.h>
-
-// #include "hwadc.h"
-// 
-// #include "d7ap_stack.h"
-// #include "fs.h"
 
 #include "hwuart.h"
 // #if (!defined PLATFORM_EFM32GG_STK3700 && !defined PLATFORM_EFM32HG_STK3400 && !defined PLATFORM_OCTA_GATEWAY)
 // 	#error Mismatch between the configured platform and the actual platform.
 // #endif
 
-// #include "userbutton.h"
 // HCI wrapper file
 #include "iM880A_RadioInterface.h"
 #include "CRC16.h"
-// #include "console.h"
-// #include "em_gpio.h"
-// #include "em_cmu.h"
+
 #define SENSOR_UPDATE	TIMER_TICKS_PER_SEC * 1
 #define SENDALP
-//#define PASSTROUGH
 
 //------------------------------------------------------------------------------
 //
