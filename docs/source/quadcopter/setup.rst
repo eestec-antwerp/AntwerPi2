@@ -28,8 +28,8 @@ TODO
 
 .. _programming-setup:
 
-Programmating setup
-===================
+Programming setup
+=================
 
   1. MAVProxy
   2. Safety switch
