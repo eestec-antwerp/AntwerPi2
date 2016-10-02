@@ -30,13 +30,13 @@ Contents:
    :maxdepth: 2
    :caption: Quadcopter Documentation
    
-   index
-   schematic
-   parts
-   software
-   setup
-   links
-   glossary
+   quadcopter/index
+   quadcopter/schematic
+   quadcopter/parts
+   quadcopter/software
+   quadcopter/setup
+   quadcopter/links
+   quadcopter/glossary
    
 
 .. _eestec:
