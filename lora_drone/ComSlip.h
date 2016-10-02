@@ -72,6 +72,9 @@
 //#include "bsp.h"
 #include "inttypes.h"
 #include <stdbool.h>
+#include "hwuart.h"
+
+uart_handle_t* lora;
 
 typedef uint8_t* (*TComSlipCbByteIndication)(uint8_t* rxBuffer, uint16_t length);
 

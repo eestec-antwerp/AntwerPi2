@@ -255,7 +255,10 @@ void bootstrap()
 
 int main(int argc, char** argv) {
 	bootstrap();
-	return iM880A_SendUDataTelegram((uint8_t*) "Test", 4);
+	printf("-------------- after bootstrap ---------------");
+	printf("result of send: %i\n", iM880A_SendCDataTelegram((uint8_t*) "Test", 4));
+	// "Test" as integers looks like this: 84, 101, 115, 116
+	uart_check_input(lora);
 }
 
 

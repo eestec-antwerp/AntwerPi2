@@ -78,6 +78,7 @@
 #include "inttypes.h"
 #include <stdbool.h>
 #include "RadioDefs.h"
+#include "ComSlip.h"
 
 
 
@@ -98,6 +99,7 @@
 //------------------------------------------------------------------------------
 
 typedef uint16_t        TWiMODLRResult;
+#include "hwuart.h"
 
 //------------------------------------------------------------------------------
 //
@@ -111,7 +113,7 @@ typedef enum
     WiMODLR_RESULT_PAYLOAD_LENGTH_ERROR,
     WiMODLR_RESULT_PAYLOAD_PTR_ERROR,
     WiMODLR_RESULT_TRANMIT_ERROR
-}TWiMDLRResultcodes;
+} TWiMDLRResultcodes;
 
 
 //------------------------------------------------------------------------------

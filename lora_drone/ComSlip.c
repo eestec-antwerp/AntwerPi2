@@ -68,7 +68,8 @@
 //------------------------------------------------------------------------------
 
 #include "ComSlip.h"
-#include "hwuart.h"
+#include <stdio.h>
+
 //------------------------------------------------------------------------------
 //
 //  Protocol Definitions
@@ -88,7 +89,7 @@
 #define	SLIPDEC_ESC_STATE			3
 
 
-uart_handle_t* lora;
+
 
 typedef struct
 {
@@ -213,6 +214,7 @@ bool
 ComSlip_SendMessage(uint8_t* msg, uint16_t msgLength)
 {
     // send start of SLIP message
+    printf("sending slip_end\n");
 	uart_send_byte(lora, SLIP_END);
 
     // iterate over all message bytes
@@ -221,16 +223,20 @@ ComSlip_SendMessage(uint8_t* msg, uint16_t msgLength)
         switch (*msg)
         {
             case SLIP_END:
+                printf("sending slip_esc, slip_esc_end\n");
             	uart_send_byte(lora, SLIP_ESC);
             	uart_send_byte(lora, SLIP_ESC_END);
                 break;
 
             case SLIP_ESC:
+                printf("sending slip_esc, slip_esc_esc\n");
             	uart_send_byte(lora, SLIP_ESC);
             	uart_send_byte(lora, SLIP_ESC_ESC);
                 break;
 
-            default:
+            default:;
+                int n = (int) *msg;
+                printf("sending an actual byte %i\n", n);
             	uart_send_byte(lora,*msg);
                 break;
         }

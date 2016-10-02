@@ -57,6 +57,8 @@ __LINK_C void           uart_rx_interrupt_disable(uart_handle_t* uart);
 __LINK_C void           uart_set_rx_interrupt_callback(uart_handle_t* uart,
                                                        uart_rx_inthandler_t rx_handler);
 
+void uart_check_input(uart_handle_t* uart);
+
 #endif
 
 /** @}*/
