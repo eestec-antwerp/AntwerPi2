@@ -29,6 +29,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
    :caption: Quadcopter Documentation
+   
    index
    schematic
    parts

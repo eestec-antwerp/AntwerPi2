@@ -17,13 +17,13 @@ Heavy electronics
 
   - **Battery**: 2 x `ZIPPY Compact 4000mAh 4S 25C Lipo Pack] <http://www.hobbyking.com/hobbyking/store/uh_viewitem.asp?idproduct=36074>`_
   - **ESC's, motors, propellors**: `DJI E305 quadcopter propulsion set <http://www.dji.com/e305>`_
-    - props are 9.4x5.0
+     * props are 9.4x5.0
 
 Fine electronics
 ================
 
    - **Raspberry Pi 3 B** for the computing part (and an microSD of 8GB)
-   - **Flight controller** (kinda): `Navio2 <https://docs.emlid.com/navio2/>`_
+   - **Flight controller** (kinda): `Navio2 <https://docs.emlid.com/navio2/>`_, from Emlid
    - **GPS/GNSS antenna**: from Emlid
    - **Navio2 wire pack**: from Emlid
    - **Power module**: from Emlid
@@ -45,5 +45,5 @@ Ground equipment
 ================
 
   - **Charger**: `IMAC B6AC V2 <http://www.hobbyking.com/hobbyking/store/uh_viewItem.asp?idproduct=58285>`_
-  - `**LiPo bag** <http://www.hobbyking.com/hobbyking/store/uh_viewitem.asp?idproduct=38356>`_
+  - `LiPo bag <http://www.hobbyking.com/hobbyking/store/uh_viewitem.asp?idproduct=38356>`_
   - **RC transmitter**: `Quanum i8 <http://www.hobbyking.com/hobbyking/store/__86274__Quanum_i8_8ch_2_4GHZ_AFHDS_2A_Digital_Proportional_Radio_System_Mode_2_Black_EU_Warehouse_.html>`_ (same as receiver)
