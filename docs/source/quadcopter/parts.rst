@@ -1,3 +1,4 @@
+.. _parts:
 
 ===============
  List of parts
