@@ -31,9 +31,9 @@ Contents:
    :caption: Quadcopter Documentation
    
    quadcopter/index
-   quadcopter/schematic
    quadcopter/parts
    quadcopter/software
+   quadcopter/hardware
    quadcopter/setup
    quadcopter/links
    quadcopter/glossary
