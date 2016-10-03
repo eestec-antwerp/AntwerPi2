@@ -16,6 +16,7 @@ Get your code/sensor flying
   1. Learn a bit about our drone
   
      a. See the :ref:`links` for a presentation
+     
      b. Optionally, a detailed list of the components in the drone can be found at :ref:`parts`.
      
   2. Learn how to program the drone it in :ref:`software`
