@@ -1,3 +1,4 @@
+.. _`setup`:
 
 =======================
  Setup and maintenance
@@ -14,9 +15,7 @@ TODO
   4. manual/programming
   
 
-.. _manual-setup:
-
-Manual setup
+Simple setup
 ============
 
   1. put drone on flat surface
@@ -26,10 +25,8 @@ explanation about controls
 
 TODO
 
-.. _programming-setup:
-
-Programming setup
-=================
+Extended setup
+==============
 
   1. MAVProxy
   2. Safety switch
