@@ -1,4 +1,4 @@
-.. _`setup`:
+.. _setup:
 
 =======================
  Setup and maintenance
