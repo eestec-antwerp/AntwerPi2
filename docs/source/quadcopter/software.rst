@@ -31,3 +31,10 @@ SITL
 ----
 
 TODO
+
+.. _maintaining_software:
+
+Maintaining
+===========
+
+While I am a fan of bleeding-edge software, it may mean your drone falls out of the sky. Therefore, only install updates to flight-critical software if it's encouraged by Emlid. After major updates, you should recalibrate the drone.

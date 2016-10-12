@@ -10,12 +10,14 @@ This quadcopter was originally made for EESTEC Antwerp's workshop "AntwerPi 2.0"
 
 The quad was built from scratch, and used rather common (and trustworthy) parts, with the exception of the Navio2 which is rather new in the world of DIY avionics. The combination of a Navio2 and a Raspberry Pi allows for a much greater flexibility than either a traditional DIY drone which lacks a proper way of programming it, or a commercial drone, which lacks an open API (like DJI's drones), or extensibility for sensors or networks (the RPi and Navio2 provide analog and digital (USB, UART, Ethernet) input).
 
+Issues or TODO's about the drone can be found here: https://github.com/eestec-antwerp/AntwerPi2/issues.
+
 Get your code/sensor flying
 ===========================
 
   1. Learn a bit about our drone
      
-     * See the :ref:`links` for a presentation given during the event
+     * See the :ref:`links` for a `presentation <https://docs.google.com/presentation/d/1Kae-PVtmXTqmM_sZVHGEoIb2vXHGXI42BfIvT4r4-KI/edit?usp=sharing>`_ given during the event (recommended!), along with other important documentation.
      * Optionally, a detailed list of the components in the drone can be found at :ref:`parts`.
   2. Learn how to program the drone it in :ref:`software`
      
