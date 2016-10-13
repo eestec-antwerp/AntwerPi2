@@ -43,7 +43,8 @@ Before
   3. Connect battery (the ESC's will start beeping because they don't get a valid signal)
   4. Connect smartphone or laptop to Drone's WiFi network
   5. Start Arducopter (the ESC's will -- thankfully -- stop beeping)
-  6. Check for any anomalies in your GCS
+  6. Start and connect your GCS (go to :ref:`ground_software` for options)
+  7. Check for any anomalies in your GCS
 
 Takeoff
 -------

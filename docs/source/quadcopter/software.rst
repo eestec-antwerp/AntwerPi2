@@ -14,6 +14,9 @@ The drone runs the official image from Emlid, which runs Raspbian. On top of Ras
    - **MAVProxy**: A popular ground station, but in a drone it will be used primarily for proxying.
    - **DroneControl**: A small web application developed by Evert, so you can more easily start/stop ArduPilot and shutdown the Raspberry Pi. Source here: https://github.com/evertheylen/DroneControl
 
+   
+.. _ground_software:
+
 Ground
 ======
 
