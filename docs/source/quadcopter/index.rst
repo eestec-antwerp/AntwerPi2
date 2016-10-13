@@ -3,6 +3,8 @@
  Getting Started
 =================
 
+.. image:: https://github.com/eestec-antwerp/AntwerPi2/raw/master/docs/img/antwerpi_drone.jpg
+
 About
 =====
 
