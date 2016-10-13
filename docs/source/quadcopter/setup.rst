@@ -95,9 +95,9 @@ More information about this can be found on the Arducopter wiki.
 Running a program
 -----------------
 
-When running code on your drone, guaranteeing safety is more complex.
+When running code on your drone, guaranteeing safety is more complex. 
 
-TODO
+TODO: A way to remove the program from the output list of MAVProxy at the push of a button...
 
 
 Maintenance
