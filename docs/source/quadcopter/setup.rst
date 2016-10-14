@@ -35,6 +35,16 @@ The RC transmitter has it's own Li-ion battery, which is charged through the tra
 Flight
 ======
 
+Checks
+------
+
+All these conditions need to be true:
+
+   * There is absolutely no rain or too strong winds
+   * The "GPS weather" is good enough to fly: http://www.uavforecast.com/
+   * The risk to crash into a person is basically non-existent.
+   * The battery of the drone is in good health, and so is the battery of the RC transmitter
+
 Before
 ------
 

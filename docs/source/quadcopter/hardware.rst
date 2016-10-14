@@ -14,3 +14,4 @@ Adding sensors
 
 There are UART, I2C and ADC ports available on the Navio, in addition to the usual ports on the Raspberry. For using the ports on the Navio, it is best to just look at the bottom of the Navio to know which wire has which function.
 
+Adding a Raspberry Pi Camera is **not** recommended, because of the reported noise on the GPS frequencies, making the GPS almost useless.

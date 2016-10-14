@@ -80,6 +80,13 @@ Manually crafting and sending MAVLink packets is rather tedious. If you're progr
 
 It is important to note that a program written with dronekit acts as a full-blown MAVLink receiver/transmitter. To run your program while also being able to use a GCS (*highly* recommended), using MAVProxy is essential.
 
+**Tip**: The combo Raspberry Pi + Navio can be powered in three ways:
+
+  * Through the power module from the battery
+  * Through the servo rail (not used in our drone)
+  * Through the Raspberry Pi's power
+
+If you use the last way of powering it (there should be a specific charger for it, since it uses more than most smartphone chargers can provide), you don't have to use any batteries to develop on the drone. Everything will work (including RC and GPS etc), but there won't be power going to the ESC's.
 
 SITL
 ----
